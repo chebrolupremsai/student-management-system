@@ -15,6 +15,7 @@ A complete Java backend project demonstrating the evolution of Java web developm
 | Legacy Stack | JDBC + Servlets + JSP |
 
 src/main/java/com/example/demo/
+
 ├── DemoApplication.java          # Spring Boot entry point
 ├── model/
 │   └── Student.java              # JPA @Entity (ORM)
