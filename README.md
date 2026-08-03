@@ -14,26 +14,25 @@ A complete Java backend project demonstrating the evolution of Java web developm
 | API Style | RESTful JSON |
 | Legacy Stack | JDBC + Servlets + JSP |
 
-src/main/java/com/example/demo/
+## Project Structure
 
-├── DemoApplication.java          # Spring Boot entry point
-├── model/
-│   └── Student.java              # JPA @Entity (ORM)
-├── repository/
-│   └── StudentRepository.java    # Spring Data JPA
-├── controller/
-│   └── StudentController.java    # REST API endpoints
-├── dto/
-│   └── ApiResponse.java          # Standard response wrapper
-└── exception/
-└── GlobalExceptionHandler.java # @RestControllerAdvice
-legacy/                             # Original implementation
-├── Student.java                    # Plain POJO (Model)
-├── JdbcStudentDao.java             # Raw JDBC data access
-├── StudentServlet.java             # Servlet Controller
-└── students.jsp                    # JSP View (HTML/CSS)
-src/main/resources/
-└── application.properties          # H2 + JPA config
+**Spring Boot REST API (`src/main/java/com/example/demo/`)**
+- `DemoApplication.java` — Spring Boot entry point
+- `model/Student.java` — JPA `@Entity` (ORM)
+- `repository/StudentRepository.java` — Spring Data JPA
+- `controller/StudentController.java` — REST API endpoints
+- `dto/ApiResponse.java` — Standard response wrapper
+- `exception/GlobalExceptionHandler.java` — `@RestControllerAdvice`
+
+**Legacy Implementation (`legacy/`)**
+- `Student.java` — Plain POJO (Model)
+- `JdbcStudentDao.java` — Raw JDBC data access
+- `StudentServlet.java` — Servlet Controller
+- `students.jsp` — JSP View (HTML/CSS)
+
+**Config**
+- `src/main/resources/application.properties` — H2 + JPA config
+- `pom.xml` — Maven dependencies
 
 ## Run Locally
 
